@@ -1,11 +1,12 @@
 <template>
-  <div class="bg-[url('/statics/backgroundImage.jpg')] bg-cover bg-no-repeat">
-    <Header />
+  <section
+    class="bg-[url('/statics/backgroundImage.jpg')] bg-cover bg-no-repeat"
+  >
     <div class="flex flex-col justify-center items-center">
       <div
-        class="w-11/12 sm:w-4/5 mt-[140px] sm:mt-[180px] flex flex-col gap-10"
+        class="w-11/12 sm:w-4/5 mt-[140px] sm:mt-[180px] flex flex-col gap-16"
       >
-        <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-10">
           <div class="flex justify-center">
             <CtaButton
               bgColor="bg-transparent"
@@ -24,7 +25,9 @@
               Modern analytics<br />
               for the modern world
             </h1>
-            <p class="text-center text-sm sm:text-md text-gray">
+            <p
+              class="text-center text-sm sm:text-md text-customGray text-opacity-65"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
               Suspendisse varius enim in eros elementum tristique.
             </p>
@@ -44,12 +47,12 @@
         </div>
         <div class="flex justify-center w-full">
           <img
-            class="max-w-[960px] w-full"
+            class="max-w-[960px] w-full shadow-custom rounded-xl sm:rounded-3xl mb-2"
             src="/statics/imageHeroBanner.png"
             alt="graphique"
           />
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

@@ -1,11 +1,11 @@
 <template>
-  <header class="w-full fixed top-0 z-50 p-4">
+  <header class="w-full fixed top-0 z-50 p-6">
     <div
       :style="{
         boxShadow: computedBoxShadow,
         backgroundColor: computedBackgroundColor,
       }"
-      class="relative rounded-3xl flex justify-between items-center h-16 px-6 transition-all duration-300"
+      class="relative max-w-screen-xl mx-auto rounded-3xl flex justify-between items-center h-16 px-6 transition-all duration-300"
     >
       <div
         class="absolute inset-0 rounded-3xl z-[-1] transition-opacity duration-300"
@@ -14,7 +14,7 @@
       <div class="sm:basis-[30%] basis-1/2">
         <img
           class="w-24 sm:w-32"
-          src="../statics/logoVaultFlow.svg"
+          src="../statics/logos/logoVaultFlow.svg"
           alt="logoVaultFlow"
         />
       </div>
@@ -78,7 +78,7 @@ onUnmounted(() => {
 
 // Calcule l'opacité du background
 const computedBackgroundColor = computed(() => {
-  const opacity = Math.min(1, scrollY.value / 100); // Ajuste la valeur pour la vitesse du changement
+  const opacity = Math.min(1, scrollY.value / 50); // Ajuste la valeur pour la vitesse du changement
   return `rgba(11, 1, 33, ${Math.max(0.5, opacity)})`; // Démarre à 50% d'opacité
 });
 

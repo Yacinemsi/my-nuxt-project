@@ -1,5 +1,6 @@
 <template>
-  <Hero />
+  <Header />
+  <MainPage />
 </template>
 
 <script setup></script>
