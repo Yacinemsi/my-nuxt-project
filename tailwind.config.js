@@ -11,10 +11,14 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        header: "#0B081C50",
+        header: "#0B081C",
+      },
+      colors: {
+        gray: "#ECECECA6",
+        violet: "#0C0324",
       },
       screens: {
-        sm: "625px",
+        sm: "682px",
       },
     },
   },

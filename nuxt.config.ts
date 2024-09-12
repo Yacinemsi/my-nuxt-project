@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
@@ -12,7 +13,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "My Landing Page",
-      meta: [{ name: "description", content: "Landing page d'entraînement" }],
+      meta: [
+        { name: "description", content: "Landing page du challenge Spikes" },
+      ],
     },
   },
 });

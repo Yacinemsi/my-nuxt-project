@@ -1,9 +1,9 @@
 <template>
   <button
     :class="computedClasses"
-    class="rounded-3xl py-1 px-4 relative overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:transition-all before:duration-500 before:ease-in-out before:z-[-1] hover:before:left-0"
+    class="rounded-3xl transform-gpu py-2 px-6 hover:border-white relative overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:transition-all before:duration-500 before:ease-in-out before:z-[-1] hover:before:left-0"
   >
-    <a class="text-xs font-light" href="#"> <slot /> </a>
+    <NuxtLink class="text-xs sm:text-sm font-light" to="#"> <slot /> </NuxtLink>
   </button>
 </template>
 
@@ -18,21 +18,21 @@ const props = defineProps({
   },
   textColor: {
     type: String,
-    default: "text-black", // Couleur du texte par défaut
+    default: "text-violet", // Couleur du texte par défaut
   },
 
   borderType: {
     type: String,
-    default: "border-none",
+    default: "border-[1px]", // Pas de bordure par défaut
   },
   hoverTextColor: {
     type: String,
-    default: "hover:text-white",
+    default: "hover:text-white", // Couleur blanche au survol par défaut
   },
   hoverBgGradient: {
     type: String,
     default:
-      "before:bg-gradient-to-r before:from-[#0B0121] before:to-[#2f3094]",
+      "before:bg-gradient-to-r before:from-[#0B0121] before:to-[#2f3094]", // Dégrader de couleur par défaut
   },
 });
 
