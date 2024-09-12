@@ -13,6 +13,7 @@ export default {
       backgroundColor: {
         header: "#0B081C",
       },
+
       colors: {
         customGray: "#ECECEC",
         violet: "#0C0324",
