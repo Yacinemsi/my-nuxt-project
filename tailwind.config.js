@@ -23,7 +23,7 @@ export default {
       },
       boxShadow: {
         custom:
-          "0px 0.5px 0px 0px rgba(255, 255, 255, 0.50) inset, 0px -2px 10px 0px rgba(233, 223, 255, 0.30), 0px -2px 40px 0px rgba(187, 155, 255, 0.15)",
+          "0px 0.5px 0px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 10px 0px rgba(233, 223, 255, 0.30), 0px 0px 40px 0px rgba(187, 155, 255, 0.15)",
       },
     },
   },

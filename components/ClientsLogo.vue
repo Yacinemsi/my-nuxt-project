@@ -1,12 +1,12 @@
 <template>
   <section class="text-center my-20 w-full">
     <div class="flex flex-col justify-center items-center mx-auto w-11/12">
-      <p class="text-white text-sm sm:text-md font-light mb-8">
+      <p class="text-white text-md sm:text-lg font-light mb-8">
         Trusted by teams at over <span class="font-normal">1,000</span> of the
         world's leading organizations
       </p>
       <div
-        class="flex flex-col sm:flex-row gap-8 items-center w-1/3 sm:w-full justify-center"
+        class="flex flex-col sm:flex-wrap sm:flex-row gap-16 sm:gap-8 sm:flex-1 items-center w-1/3 sm:w-full justify-center"
       >
         <img
           src="../statics/logos/logo-dell.svg"
@@ -36,7 +36,7 @@
         <img
           src="../statics/logos/logo-lattice.svg"
           alt="Lattice"
-          class="mx-autow-full sm:w-36"
+          class="mx-auto w-full sm:w-36"
         />
         <img
           src="../statics/logos/logo-ted.svg"

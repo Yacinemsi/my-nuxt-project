@@ -1,8 +1,10 @@
 <template>
   <section class="w-full space-y-16 bg-title">
-    <div class="mx-auto flex flex-col gap-6 justify-center items-center">
+    <div
+      class="px-8 sm:px-0 mx-auto flex flex-col gap-6 justify-center items-center"
+    >
       <h2
-        class="text-customGray bg-[url('/statics/background-title.png')] bg-contain bg-center bg-no-repeat w-full max-w-xs text-5xl text-center tracking-tighter font-medium leading-tight"
+        class="text-customGray bg-[url('/statics/background-title.png')] bg-contain bg-center bg-no-repeat w-full max-w-xs text-2xl sm:text-5xl text-center tracking-tighter font-medium leading-tight"
       >
         Features that work for your future.
       </h2>
@@ -11,46 +13,42 @@
         yourself.
       </p>
     </div>
-    <div class="flex flex-col gap-10">
-      <div
-        class="flex w-4/5 max-w-5xl gap-3 mx-auto justify-center items-center"
-      >
-        <div class="basis-1/2">
-          <CardsFeatures
-            logo="/_nuxt/statics/logos/iconAnalytics.png"
-            link="#analytics"
+    <div class="flex flex-col justify-center items-center gap-6 sm:gap-10">
+      <div class="flex flex-col sm:flex-row w-11/12 max-w-5xl gap-6 mx-auto">
+        <CardsFeatures
+          logo="/_nuxt/statics/logos/iconAnalytics.png"
+          link="#analytics"
+        >
+          <template #title>Analytics Dashboard</template>
+          <template #description
+            >Our Analytics Dashboard provides a clear and intuitive interface
+            for you to easily analyze your data. From customizable graphs to
+            real-time data updates, our dashboard offers everything you need to
+            gain valuable insights.</template
           >
-            <template #title>Analytics Dashboard</template>
-            <template #description
-              >Our Analytics Dashboard provides a clear and intuitive interface
-              for you to easily analyze your data. From customizable graphs to
-              real-time data updates, our dashboard offers everything you need
-              to gain valuable insights.</template
-            >
-            <template #link>View dashboard</template>
-          </CardsFeatures>
-        </div>
-        <div class="basis-1/2">
-          <CardsFeatures
-            logo="/_nuxt/statics/logos/iconDigital.png"
-            link="#digital"
+          <template #link>View dashboard</template>
+        </CardsFeatures>
+
+        <CardsFeatures
+          logo="/_nuxt/statics/logos/iconDigital.png"
+          link="#digital"
+        >
+          <template #title>Digital Credit Tokens</template>
+          <template #description
+            >Reward your customers and incentivize engagement with our
+            innovative digital credit tokens. Our tokens can be customized to
+            match your branding, and are a flexible and scalable way to drive
+            customer loyalty and encourage repeat business.</template
           >
-            <template #title>Digital Credit Tokens</template>
-            <template #description
-              >Reward your customers and incentivize engagement with our
-              innovative digital credit tokens. Our tokens can be customized to
-              match your branding, and are a flexible and scalable way to drive
-              customer loyalty and encourage repeat business.</template
-            >
-            <template #link>View tokens</template>
-          </CardsFeatures>
-        </div>
+          <template #link>View tokens</template>
+        </CardsFeatures>
       </div>
-      <div>
+      <div class="w-11/12 max-w-5xl">
         <CardsFeatures
           logo="/_nuxt/statics/logos/iconCode.png"
           link="#code"
           extraImage="/_nuxt/statics/imageDigitalToken.png"
+          width="sm:w-1/2"
         >
           <template #title>Code collaboration</template>
           <template #description
