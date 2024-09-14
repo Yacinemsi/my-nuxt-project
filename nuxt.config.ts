@@ -12,8 +12,10 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "My Landing Page",
+      title: "Vaultflow",
       meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "description", content: "Landing page du challenge Spikes" },
       ],
     },

@@ -62,6 +62,9 @@
           <template #link>View code collaboration</template>
         </CardsFeatures>
       </div>
+      <div class="w-11/12 max-w-5xl">
+        <CardsFeatures divWithButton></CardsFeatures>
+      </div>
     </div>
   </section>
 </template>

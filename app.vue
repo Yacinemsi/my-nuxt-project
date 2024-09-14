@@ -1,8 +1,5 @@
 <template>
   <Header />
   <MainPage />
+  <Footer />
 </template>
-
-<script setup></script>
-
-<style></style>
