@@ -15,10 +15,7 @@
     </div>
     <div class="flex flex-col justify-center items-center gap-6 sm:gap-10">
       <div class="flex flex-col sm:flex-row w-11/12 max-w-5xl gap-6 mx-auto">
-        <CardsFeatures
-          logo="/_nuxt/statics/logos/iconAnalytics.png"
-          link="#analytics"
-        >
+        <CardsFeatures logo="/iconAnalytics.png" link="#analytics">
           <template #title>Analytics Dashboard</template>
           <template #description
             >Our Analytics Dashboard provides a clear and intuitive interface
@@ -29,10 +26,7 @@
           <template #link>View dashboard</template>
         </CardsFeatures>
 
-        <CardsFeatures
-          logo="/_nuxt/statics/logos/iconDigital.png"
-          link="#digital"
-        >
+        <CardsFeatures logo="/iconDigital.png" link="#digital">
           <template #title>Digital Credit Tokens</template>
           <template #description
             >Reward your customers and incentivize engagement with our
@@ -45,9 +39,9 @@
       </div>
       <div class="w-11/12 max-w-5xl">
         <CardsFeatures
-          logo="/_nuxt/statics/logos/iconCode.png"
+          logo="/iconCode.png"
           link="#code"
-          extraImage="/_nuxt/statics/imageDigitalToken.png"
+          extraImage="/imageDigitalToken.png"
           width="sm:w-1/2"
         >
           <template #title>Code collaboration</template>
