@@ -21,9 +21,9 @@
       <div class="basis-1/2 sm:basis-2/5">
         <nav class="hidden sm:block">
           <ul class="flex text-white text-sm justify-evenly font-light">
-            <li><NuxtLink href="#">Features</NuxtLink></li>
-            <li><NuxtLink href="#">Pricing</NuxtLink></li>
-            <li><NuxtLink href="#">About us</NuxtLink></li>
+            <li><NuxtLink href="#features">Features</NuxtLink></li>
+            <li><NuxtLink href="#pricing">Pricing</NuxtLink></li>
+            <li><NuxtLink href="#about-us">About us</NuxtLink></li>
           </ul>
         </nav>
         <div class="sm:hidden w-full flex justify-end">
@@ -44,9 +44,9 @@
             ✖
           </button>
           <ul class="flex flex-col mt-8 text-white text-lg">
-            <li class="mb-6"><NuxtLink href="#">Features</NuxtLink></li>
-            <li class="mb-6"><NuxtLink href="#">Pricing</NuxtLink></li>
-            <li class="mb-6"><NuxtLink href="#">About us</NuxtLink></li>
+            <li class="mb-6"><NuxtLink href="#features">Features</NuxtLink></li>
+            <li class="mb-6"><NuxtLink href="#pricing">Pricing</NuxtLink></li>
+            <li class="mb-6"><NuxtLink href="#about-us">About us</NuxtLink></li>
           </ul>
         </div>
         <div class="flex-grow" @click="toggleMenu"></div>

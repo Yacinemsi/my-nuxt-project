@@ -46,7 +46,7 @@
           </div>
         </div>
         <div
-          class="animated-border-image flex justify-center max-w-[960px] w-full rounded-xl relative p-1"
+          class="animated-border-image flex justify-center max-w-[960px] w-full rounded-xl relative p-1 mx-auto"
         >
           <img
             class="max-w-[960px] w-full shadow-custom bg-violet rounded-lg block relative z-1"
