@@ -21,7 +21,7 @@
           <div class="relative flex flex-col gap-6 justify-center">
             <h1
               data-text="Modern analytics for the modern world"
-              class="text-5xl text-white relative sm:text-[80px] tracking-tighter font-medium text-center leading-[40px] sm:leading-[80px]"
+              class="text-5xl text-white sm:text-[80px] tracking-tighter font-medium text-center leading-[40px] sm:leading-[80px]"
             >
               Modern analytics for the modern world
             </h1>
@@ -68,7 +68,6 @@ h1::before,
 h1::after {
   content: attr(data-text);
   position: absolute;
-  left: 0;
   top: 0;
   color: white;
   overflow: hidden;
@@ -84,6 +83,14 @@ h1::after {
   left: -2px;
   text-shadow: -2px 0 #ce18a4;
   animation-duration: 1.2s;
+}
+@media (width > 1800px) {
+  h1::before,
+  h1::after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 
 @keyframes glitch {
